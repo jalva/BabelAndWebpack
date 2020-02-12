@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h3>Testing Babel transpilation with Webpack</h3>
+
+    <!-- load script for modern browsers, will be ignored by legacy browsers -->
+    <script type="module" src="app/js/es6-code.js"></script>
+    <!-- load script for legacy browsers (ie 11), will be ignored by modern browsers -->
+    <script nomodule src="assets/js/dist/myTranspiledFile.ie-bundle.js"></script>
+
+    <script type="text/javascript" src="assets/js/dist/myTranspiledFile2.ie-bundle.js"></script>
+</body>
+</html>
